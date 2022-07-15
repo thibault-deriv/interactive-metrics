@@ -36,8 +36,8 @@ workflows:
       - not_interactive:
           filters:
             branches:
-              only: /^master$/
+              only: /^main$/
       - interactive:
           filters:
             branches:
-              only: /^master$/
+              only: /^main$/
