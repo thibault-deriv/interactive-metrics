@@ -31,12 +31,14 @@ interactive:
             npx wrangler pages publish . --project-name=interactive-metrics --branch=main
  
 workflows:
-  release:
+  release_not_interactive:
     jobs:
       - not_interactive:
           filters:
             branches:
               only: /^main$/
+  release_interactive:
+    jobs:
       - interactive:
           filters:
             branches:
