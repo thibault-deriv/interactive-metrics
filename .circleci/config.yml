@@ -8,7 +8,7 @@ jobs:
       - run:
           name: "Publish to cloudflare pages (staging)"
           command: |
-            npm i cloudflare@2.0.19
+            npm i wrangler@2.0.19
             mkdir public
             cd public
             echo "Hello not interactive" >> index.html
@@ -20,7 +20,7 @@ jobs:
       - run:
           name: "Publish to cloudflare pages (staging)"
           command: |
-            npm i cloudflare@2.0.21
+            npm i wrangler@2.0.21
             mkdir public
             cd public
             echo "Hello interactive" >> index.html
