@@ -17,7 +17,7 @@ jobs:
             cd public
             echo "Hello not interactive" >> index.html
             npx wrangler pages publish . --project-name=interactive-metrics --branch=not
-  not_interactive:
+interactive:
     docker:
       - image: cimg/node:18.4.0
     steps:
